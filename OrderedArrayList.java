@@ -19,4 +19,11 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
     // gets sorted anyways, index placed does not matter
   }
 
+  public T set(int index, T element) {
+    T result = get(index) ;
+    remove(index) ;
+    add(element) ;
+    return result ;
+  }
+
 }
