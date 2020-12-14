@@ -24,6 +24,12 @@ public class ListTester {
     System.out.println(b.add(0)) ;
     System.out.println(b.add(18)) ;
     System.out.println(b.toString()) ;
+    b.add(0,4) ;
+    b.add(0,2) ;
+    b.add(5,-26) ;
+    System.out.println(b.toString()) ;
+    System.out.println(b.set(4,-100)) ;
+    System.out.println(b.toString()) ;
   }
 
 }
